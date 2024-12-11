@@ -3,10 +3,46 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-color: var(--black);
 }
+
+/* Reusable Code */
 
 a {
   text-decoration: none;
+  color: var(--para);
+  font-size: 15px;
+}
+
+p {
+  color: var(--para);
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading);
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  padding: 10px 30px;
+  font-size: 15px;
+  border: 2px solid var(--white);
+}
+
+/* Reusable code end */
+
+/* Colors */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --heading: #ffffff;
+  --categories: #1a1a1a;
+  --para: rgb(172, 172, 172);
 }
 
 /* Header Section Start */
@@ -14,19 +50,21 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1a1a1a;
-  padding: 30px 20px;
+  border-bottom: 1px solid white;
+  padding: 10px 70px;
 }
 
 .logo {
   color: white;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .navbar-lists {
@@ -34,7 +72,67 @@ a {
   align-items: center;
   justify-content: center;
   list-style-type: none;
-  gap: 10px;
+  gap: 30px;
+  font-size: 15px;
+}
+
+.navbar-link {
+  color: rgb(172, 172, 172);
+  font-weight: 600;
+}
+
+.navbar-link:hover {
+  color: white;
+}
+
+.hire-me {
+  color: white;
+  padding: 10px 30px;
+  font-size: 15px;
+  border: 2px solid var(--white);
+}
+
+.hire-me:hover {
+  color: var(--black);
+  background-color: white;
 }
 
 /* Header Section End */
+
+/* Hero Section Start */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-area {
+  width: 50%;
+}
+
+.heading {
+}
+
+.para {
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.btn-first {
+}
+
+.btn-second {
+}
+
+.image-area {
+  width: 50%;
+}
+
+.hero-img {
+}
+/* Hero Section End */
