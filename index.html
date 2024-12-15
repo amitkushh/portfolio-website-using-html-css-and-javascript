@@ -16,14 +16,16 @@
   <body>
     <header class="header">
       <div>
-        <p class="logo">PORTFOLIO</p>
+        <a href="index.html"><p class="logo">PORTFOLIO</p></a>
       </div>
       <nav class="navbar">
         <ul class="navbar-lists">
-          <li><a href="#" class="navbar-link about">About</a></li>
-          <li><a href="#" class="navbar-link portfolio">Portfolio</a></li>
-          <li><a href="#" class="navbar-link services">Services</a></li>
-          <li><a href="#" class="navbar-link skills">Skills</a></li>
+          <li><a href="#about" class="navbar-link about">About</a></li>
+          <li>
+            <a href="#portfolio" class="navbar-link portfolio">Portfolio</a>
+          </li>
+          <li><a href="#service" class="navbar-link services">Services</a></li>
+          <li><a href="#skill" class="navbar-link skills">Skills</a></li>
           <li><a href="#" class="navbar-link contact">Contact</a></li>
         </ul>
         <button class="btn hire-me">Hire Me</button>
@@ -52,8 +54,9 @@
     <!-- Hero section end -->
     <!-- about section start -->
     <section>
-      <div class="about-me-section">
+      <div class="about-me-section" id="about">
         <h2 class="about-me-heading">About Me</h2>
+        <hr />
         <div class="both-section">
           <div class="about-image-area">
             <img
@@ -99,8 +102,9 @@
 
     <!-- portfolio section start -->
     <section>
-      <div class="portfolio-section">
+      <div class="portfolio-section" id="portfolio">
         <h2>My Portfolio</h2>
+        <hr />
         <div class="portfolio-boxes">
           <a href="#"
             ><img src="images/portfolio-design-sample/1.jpg" alt="first design"
@@ -130,8 +134,9 @@
 
     <!-- my services section start -->
     <section>
-      <div class="my-services-section">
+      <div class="my-services-section" id="service">
         <h2>My Services</h2>
+        <hr />
         <div class="all-boxes-section">
           <div class="services-box">
             <img
@@ -237,8 +242,9 @@
 
     <!-- my skills section start -->
     <section>
-      <div class="my-skills-section">
+      <div class="my-skills-section" id="skill">
         <h2>My Skills</h2>
+        <hr />
         <h3>Professional Skills</h3>
         <div class="skills-boxes">
           <div class="skill-box">
@@ -274,16 +280,40 @@
     <section>
       <div class="client-testimonial-section">
         <h2>Client Testimonials</h2>
-        <div class="testimonial-box">
-          <img src="" alt="" />
-          <h3>Sarah Johnson</h3>
-          <p>Marketing Director</p>
-          <p>
-            "Incredible talent and professionalism. The website delivered was
-            exactly what we needed. The process was smooth and the results are
-            outstanding."
-          </p>
+        <hr />
+        <div class="testimonial-boxes">
+          <div class="testimonial-box">
+            <img src="images/client.png" alt="client" />
+            <h3>John Smith</h3>
+            <span>CEO, Tech Corp</span>
+            <p>
+              "Outstanding work! The attention to detail and creative solutions
+              provided exceeded our expectations. Highly recommended for any web
+              development project."
+            </p>
+          </div>
+          <div class="testimonial-box">
+            <img src="images/client.png" alt="client" />
+            <h3>Sarah Johnson</h3>
+            <span>Marketing Director</span>
+            <p>
+              "Incredible talent and professionalism. The website delivered was
+              exactly what we needed. The process was smooth and the results are
+              outstanding."
+            </p>
+          </div>
+          <div class="testimonial-box">
+            <img src="images/client.png" alt="client" />
+            <h3>Michael Brown</h3>
+            <span>Startup Founder</span>
+            <p>
+              "A true professional who understands both design and
+              functionality. The final product helped us increase our conversion
+              rate significantly."
+            </p>
+          </div>
         </div>
+        <button class="client-btn">Work with Me</button>
       </div>
     </section>
 
@@ -294,6 +324,7 @@
     <section>
       <div class="achievement-section">
         <h2>Achievements</h2>
+        <hr />
         <div class="achievement-boxes-section">
           <div class="achievement-box">
             <img src="images/achievements/trophy.svg" class="achievement-img" />
@@ -330,6 +361,7 @@
     <section>
       <div class="recent-award-section">
         <h2>Recent Awards</h2>
+        <hr />
         <div class="award-boxes-section">
           <div class="award-box">
             <div class="award-box-top">
@@ -384,15 +416,6 @@
       </div>
     </section>
     <!-- recent award section end -->
-
-    <!-- Get In Touch section start -->
-    <section>
-      <div class="get-in-touch-section">
-        <h2>Get In Touch</h2>
-      </div>
-    </section>
-
-    <!-- Get In Touch section end -->
 
     <!-- footer section start  -->
     <footer>
