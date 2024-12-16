@@ -115,6 +115,10 @@ border-bottom: 1px solid white;
   background-color: white;
 }
 
+.menu-links {
+  display: none;
+}
+
 /* Header Section End */
 
 /* Hero Section Start */
@@ -755,4 +759,185 @@ border: 1px solid white;
   gap: 20px;
 }
 
-/* footer s
+/* footer section end */
+
+@media screen and (max-width: 768px) {
+  /* Header */
+  .header {
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-lists {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .content-area, .image-area {
+    width: 100%;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .hero-btn {
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  /* About Section */
+  .about-me-section {
+    padding: 50px 20px;
+  }
+
+  .both-section {
+    flex-direction: column;
+  }
+
+  .about-image-area, .about-content-area {
+    width: 100%;
+  }
+
+  .about-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .box-container {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  /* Portfolio Section */
+  .portfolio-section {
+    padding: 40px 20px;
+  }
+
+  .portfolio-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-boxes img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Services Section */
+  .my-services-section {
+    padding: 50px 20px;
+  }
+
+  .all-boxes-section {
+    grid-template-columns: 1fr;
+  }
+
+  .services-box {
+    width: 100%;
+  }
+
+  /* Skills Section */
+  .my-skills-section {
+    padding: 50px 20px;
+  }
+
+  .skills-boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-box {
+    width: 100%;
+  }
+
+  /* Testimonial Section */
+  .client-testimonial-section {
+    padding: 50px 20px;
+  }
+
+  .testimonial-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-box {
+    width: 100%;
+  }
+
+  /* Achievements Section */
+  .achievement-section {
+    padding: 50px 20px;
+  }
+
+  .achievement-boxes-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .achievement-box {
+    width: 100%;
+  }
+
+  /* Recent Awards Section */
+  .recent-award-section {
+    padding: 50px 20px;
+  }
+
+  .award-boxes-section {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 50px 20px;
+  }
+
+  .top-footer-links {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .bottom-footer-bar {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .terms-link {
+    flex-direction: column;
+  }
+}
+
+/* For tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .portfolio-boxes,
+  .all-boxes-section,
+  .skills-boxes,
+  .testimonial-boxes,
+  .achievement-boxes-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .top-footer-links {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
